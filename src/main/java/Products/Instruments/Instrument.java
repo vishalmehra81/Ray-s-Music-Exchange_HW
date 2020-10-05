@@ -1,5 +1,5 @@
 package Products.Instruments;
-
+import Products.Product;
 import Properties.IPlay;
 
 public abstract class Instrument extends Product implements IPlay {

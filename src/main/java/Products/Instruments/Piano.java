@@ -1,9 +1,11 @@
 package Products.Instruments;
 
-public class Piano {
+public class Piano extends Instrument {
     private int totalKeys;
     private int totalStrings;
-    public Piano(int totalKeys, int totalStrings){
+
+    public Piano(String instrumentMaterial, String color, InstrumentType type, int totalKeys, int totalStrings) {
+        super(instrumentMaterial, color, type);
         this.totalKeys = totalKeys;
         this.totalStrings = totalStrings;
     }
@@ -15,7 +17,9 @@ public class Piano {
     public int getTotalStrings() {
         return totalStrings;
     }
-    public String play(){
-        return "tong tong";
+
+    public String playInstrument() {
+        return "Ding Ding";
     }
+
 }

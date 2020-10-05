@@ -1,9 +1,10 @@
 package Products.Instruments;
 
-public class Flute {
+public class Flute extends Instrument {
     private int totalFingerHoles;
 
-    public Flute(int totalFingerHoles){
+    public Flute(String instrumentMaterial, String color, InstrumentType type,int totalFingerHoles){
+        super(instrumentMaterial,color,type);
         this.totalFingerHoles = totalFingerHoles;
     }
 

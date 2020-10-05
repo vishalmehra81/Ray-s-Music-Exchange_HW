@@ -1,9 +1,10 @@
 package Products.Instruments;
 
-public class Trumpet {
+public class Trumpet extends Instrument {
     private int totalValves;
 
-    public Trumpet(int totalValves){
+    public Trumpet(String instrumentMaterial, String color, InstrumentType type,int totalValves){
+        super(instrumentMaterial,color,type);
         this.totalValves = totalValves;
     }
 
